@@ -1,0 +1,22 @@
+[
+    {
+        "question_text":"What is a dolphin?",
+        "alternitives":[
+            "Amphibians",
+            "Fish",
+            "Mamals",
+            "Birds"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question_text":"What is a your mom?",
+        "alternitives":[
+            "A hoe",
+            "A nice lady",
+            "A bitch",
+            "A mom"
+        ],
+        "correct_answer": 2
+    }
+]
