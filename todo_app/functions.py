@@ -1,3 +1,6 @@
+import time
+
+
 def print_list(filepath):
     with open(filepath,'r') as file:
         todo_list = file.readlines()
@@ -8,3 +11,11 @@ def get_todos(filepath):
     with open(filepath,'r') as file:
         todo_list = file.readlines()
     return todo_list
+
+
+def add_todo(input):
+    current_time = time.strftime("%b %d, %Y at %H:%M:%S")
+    add_todo = f"{input} {current_time} \n"
+    file = open("todo_app/todo.txt", "a")
+    file.writelines(add_todo)
+    file.close()
