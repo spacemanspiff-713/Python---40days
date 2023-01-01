@@ -14,7 +14,7 @@ def get_todos(filepath):
 
 
 def add_todo(input):
-    current_time = time.strftime("%b %d, %Y at %H:%M:%S")
+    current_time = time.strftime("%b %d, %Y")
     add_todo = f"{input} {current_time} \n"
     file = open("todo_app/todo.txt", "a")
     file.writelines(add_todo)
