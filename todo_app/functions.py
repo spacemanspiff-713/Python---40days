@@ -1,4 +1,5 @@
 import time
+FILEPATH = 'todo_app/todo.txt'
 
 
 def print_list(filepath):
@@ -14,8 +15,12 @@ def get_todos(filepath):
 
 
 def add_todo(input):
-    current_time = time.strftime("%b %d, %Y")
-    add_todo = f"{input} {current_time} \n"
+    # current_time = time.strftime("%b %d, %Y")
+    add_todo = f"{input} \n"
     file = open("todo_app/todo.txt", "a")
     file.writelines(add_todo)
     file.close()
+
+def edit_todos(todos, filepath = FILEPATH):
+    with open(filepath, 'w') as file:
+        file.writelines(todos)
