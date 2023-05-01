@@ -12,3 +12,7 @@ with col2:
     Hello, World! I'm Jason, a python developer. Check out my projects and reach out to discuss partnering together for any projects you have in mind.
     """
     st.info(content)
+
+contact_info = "Below you can find my current projects 👇🏼"
+
+st.write(contact_info)
